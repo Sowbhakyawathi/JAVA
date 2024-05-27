@@ -1,0 +1,170 @@
+What is SQL
+	Structured Query Language is a programming language for storing and processsing information in a relational database.
+
+	we have 4 types languages
+		1. DDL	- Data Definition Language
+		2. DML 	- Data Manipulation Language
+		3. DCL	- Data Control Language
+		4. TCL	- Transaction Control Language
+	
+DDL	- Data Definition Language
+	1. Create
+	2. Alter
+	3. Drop
+	4. Truncate
+
+DML - Data Manipulation Language
+	1. Select
+	2. Insert
+	3. Update
+	4. Delete
+
+DCL	- Data Control Language
+	1. Grant
+	2. Revoke
+
+TCL	- Transaction Control Language
+	1. Commit
+	2. Rollback
+	3. savepoint
+	
+/*DDL	- Data Definition Language*/
+
+create database employeemgmt;
+
+create table emploee (id int, name varchar(100), phone varchar(10), email varchar(100),
+address1 varchar(100), address2 varchar(100), city varchar(100), state varchar(100));
+
+alter table emploee modify phone numeric(10);
+
+alter table emploee modify pin numeric(6);
+
+alter table emploee rename column phone to phone_no;
+
+alter table emploee add (country varchar(100), pin int);
+
+alter table emploee add (DOB date);
+
+alter table emploee add (pin int);
+
+alter table emploee drop column pin;
+
+drop table emploee;
+
+
+/*DML 	- Data Manipulation Language*/
+Insert into emploee (id, name, phone_no, email, address1, address2, city, state, country, pin, dept_id) 
+values (1, 'Thiru', 9758593823, 'thiru@gmail.com', '17/7', 'dsdfsd', 'Chennai', 'TamilNadu', 'India', '600064', 101); 
+
+Insert into emploee (id, name, phone_no, email, address1, address2, city, state, country, pin, dept_id) 
+values (3, 'Raj', 9876512430, 'Raj@gmail.com', '323', 'sdffgdf', 'Tuticorin', 'TamilNadu', 'India', '628008', 102),
+ (4, 'Rajan', 9754245903, 'rajan@gmail.com', '12/1A', ';fdlkgdf;gdf', 'Madurai', 'TamilNadu', 'India', '651002', 101);
+
+
+select * from emploee;
+
+update emploee set dob = '1985-06-01'
+where id = 4;
+
+delete from emploee where id=4;
+
+truncate table emploee;
+
+Where clause operators are
+--------------------------
+=
+>
+<
+>=
+<=
+<> - Not equal
+Between
+Like
+in
+
+Order By
+--------
+asc
+desc
+
+AND, OR, Not
+------------
+
+It will get first record
+-------------------------
+select top 1 * from emploee - MSSQL Query
+
+Aggregate Functions
+-------------------
+	An aggregate function is that perform a calculation on a set of value, and returns a single value.
+
+functions are
+-------------
+MIN()
+MAX()
+COUNT()
+SUM()
+AVG()
+
+Aliases 
+-------
+
+JOINS
+-----
+ A join clause is used to combine rows from two or more tables, based on a related column between them.
+ 
+types
+-----
+	Inner Join (join) - Returns records that have matching values in both table. 
+	LEFT (OUTER) JOIN - Returns all records from left table and matched record from the right table.
+	Right (OUTER) JOIN - Returns all records from right table and matched record from the left table.
+	Full (OUTER) JOIN - Returns all records when there is a match in either left or right table
+	
+	Self Join - is a regular join but the table is joined with itself.
+	
+	difference between left and right join
+	
+UNION Operator
+--------------
+	The union operator is used to combine the resultset two or more select statement
+	
+	- Every SELECT statement within UNION must have the same number of columns.
+	- The columns must also have similar data types.
+	- The columns in every SELECT statement must also be in the same order.
+	- UNION should return with unique or distinct values
+
+UNION ALL
+---------
+	The UNION ALL allow duplicate values.
+
+
+Group BY statement
+------------------
+The Group By statement groups row that have the same values into summary rows.
+
+Having
+------
+The Having clause was added  to SQL because the where keyword cannot be used with aggregate function.
+
+Exists
+------
+	The Exists operator is used to test for the existence of any record in a subquery
+
+
+Insert into Select 
+------------------
+	copy all column from one table to another table.
+	
+Constraint
+----------
+	The Primary Key constraint uniquely identifies each record in the table
+	
+	Primary Key must contain UNIQUE values, and cannot contain null values.
+	The table can have only one primary key; this primary key can consist of single or multiple column.
+
+Foreign Key
+-----------
+	The FOREIGN KEY constraint is used to prevent actions that would destroy links 
+	
+
+
