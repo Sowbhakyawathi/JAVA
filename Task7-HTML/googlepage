@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Page Not Found</title>
+
+</head>
+<style>
+.imagegoo {
+padding: 1px;
+}
+.adjustimage {
+margin: 1px;
+width: 12%;
+height: 0 auto;
+position: relative; /* Allows positioning relative to its normal position */
+left: 420px; /* Moves the image 50 pixels to the right */
+top: 10px;
+}
+
+.adjusttext {
+ font-size: 20px;
+ line-height:1.8;
+ padding: 50px;
+ position: relative;
+left: 20px; 
+ 
+top:10px;
+}
+.adjusttext br+span {
+ font-size: 15px;
+ line-height:1.4;
+ padding: 20px;
+ position: relative;
+left:10px;  
+top: 10px;
+}
+.adjusttext2 {
+background-color:  #F0F8FF;
+    border: 1px solid#000000;
+     
+    padding: 50px;  
+    width: 500px;
+    height: 100px; 
+    right:500px;
+     position: fixed ;
+left: 480px;  
+top: 230px;
+}
+.adjusttext2 br+span {
+ font-size: 15px;
+ line-height: 1;
+ padding: 20px;
+ position: relative;
+left: 10px;  
+top: 15px;
+ text-align: center;
+}
+.adjusttext2 br+span1 {
+ font-size: 15px;
+ line-height: 1.5;
+ padding: 20px;
+ position: relative;
+left: 10px;  
+top: 15px;
+ text-align: center;
+}
+
+</style>
+<body>
+<a  href= "https://support.google.com/docs/" > 
+<div class="imagegoo">
+
+<img class= "adjustimage" src="C:\Users\sowmg\eclipse-workspace\tutorialpage\Images\goo.png" alt=""   ></a>
+
+</div>
+
+<p class="adjusttext"   style="text-align: center;">
+<b>Sorry, unable to open the file at this time.</b><br>
+<span>Please check the address and try again.</span>
+</p>
+
+<p class= "adjusttext2" style="text-align: center;" >
+<b>Get stuff done with Google Drive</b><br>
+
+    <span>Apps in Google Drive make it easy to create, store<br>
+     and share online documents, spreadsheets,<br> presentations and more.</span><br></br>
+
+
+<span1> Learn more at<a  href= "https://drive.google.com/start/apps" >  drive.google.com/start/apps.</a></span1>
+</p>
+
+
+
+
+</body>
+</html>
