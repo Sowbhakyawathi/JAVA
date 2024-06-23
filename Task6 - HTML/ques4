@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML elements to display</title>
+</head>
+<body>
+	<hr>
+	<ul>
+		<li>Programming Language</li>
+
+		<ol style="list-style-type: circle;">
+			<li>JavaScript</li>
+
+
+			<ol type="a">
+				<li>Angular</li>
+				<li>React</li>
+				<li>Vue.js</li>
+			</ol>
+		</ol>
+		<ol style="list-style-type: circle;">
+			<li>Python</li>
+
+			<ol type="a">
+				<li>Django Framework</li>
+				<li>Flask Framework</li>
+			</ol>
+		</ol>
+		<ol style="list-style-type: circle;">
+			<li>Java</li>
+			<ol type="a">
+				<li>Spring</li>
+				<li>Maven</li>
+				<li>Hibernate</li>
+			</ol>
+	</ul>
+
+	<ul>
+		<li>Database</li>
+	
+	<ol style="list-style-type: circle;">
+		<li>MySQL</li>
+	</ol>
+	<ol style="list-style-type: circle;">
+		<li>MongoDB</li>
+	</ol>
+	<ol style="list-style-type: circle;">
+		<li>Casandra</li>
+	</ol>
+	</ul>
+	</hr>
+</body>
+</html>
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Type</title>
+</head>
+<body>
+	<form id="contactForm" onsubmit="event.preventDefault(); submitForm();">
+		<labelfor"name"> Name:</label>
+		<br>
+		<input type="text" name="name" id="name" required>
+		<br>
+		<span id="nameError" class="error"></span>
+		<br>
+
+		<labelfor "email">Email:</label><br>
+    <input type="email" name="email" id="email"required><br>
+    <span id="emailError" class="error"></span><br>
+    
+    <label for "phone"> Phone:</label><br>
+    <input type="text" name="phone" id="phone"required><br>
+    <span id="phoneError" class="error"></span><br>
+    
+    <label>Employee Type:</label><br>
+        <label for="salaried">
+         <input type="radio" id="salaried" name="employee_type"  required>
+            Salaried
+        </label><br>
+        <label for="own-business">
+         <input type="radio" id="own-business" name="employee_type"  required>
+            Own Business
+        </label>
+         <span id="	own-businessError" class="error"></span><br><br>
+        
+    <label for "mesage">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <span id="messageError" class="error"></span><br>
+    
+    <input type="submit" value="submit">
+    
+	</form>
+</body>
+</html>
