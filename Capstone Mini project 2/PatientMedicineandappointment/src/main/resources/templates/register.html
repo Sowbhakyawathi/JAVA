@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<h1>Register</h1>
+	<form action="#" th:action="@{/api/patients}" th:object="${patient}"
+		method="post">
+		<label for="name">Name:</label> <input type="text" id="name"
+			th:field="*{name}" required> <label for="contactDetails">Contact
+			Details:</label> <input type="text" id="contactDetails"
+			th:field="*{contactDetails}" required> <label
+			for="medicalHistory">Medical History:</label>
+		<textarea id="medicalHistory" th:field="*{medicalHistory}" required></textarea>
+
+		<button type="submit">Register</button>
+	</form>
+
+</body>
+</html>
