@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Available Bus Routes</title>
+</head>
+<body>
+<div th:fragment="content">
+        <h1>Available Bus Routes</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Route</th>
+                    <th>Departure Time</th>
+                    <th>Arrival Time</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="bus : ${buses}">
+                    <td th:text="${bus.route}">Route</td>
+                    <td th:text="${bus.departureTime}">Departure Time</td>
+                    <td th:text="${bus.arrivalTime}">Arrival Time</td>
+                    <td th:text="${bus.price}">Price</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
